@@ -1,0 +1,147 @@
+﻿@model IEnumerable<LoanSystemAdminPanel.Models.UserRegistrations>
+
+@{
+    ViewBag.Title = "Loan Registrants";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.firstName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.lastName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.deviceIMEI)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.phoneN)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IDnumber)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.dateOfBirth)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.emailAddress)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.gender)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.phoneIsMine)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.phoneIsNew)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.howLongHaveUsedPhone)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.averageIncome)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.haveAjob)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.selfEmployed)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.student)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.haveNoIncome)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.purposeOfLoan)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.kindOfExpenseForLoan)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.descriptionForPurposeOfLoan)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.anyOutstandingLoan)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.firstName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.lastName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.deviceIMEI)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.phoneN)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IDnumber)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.dateOfBirth)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.emailAddress)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.gender)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.phoneIsMine)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.phoneIsNew)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.howLongHaveUsedPhone)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.averageIncome)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.haveAjob)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.selfEmployed)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.student)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.haveNoIncome)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.purposeOfLoan)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.kindOfExpenseForLoan)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.descriptionForPurposeOfLoan)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.anyOutstandingLoan)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ID })
+        </td>
+    </tr>
+}
+
+</table>

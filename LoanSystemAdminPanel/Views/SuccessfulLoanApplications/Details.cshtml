@@ -1,0 +1,66 @@
+﻿@model LoanSystemAdminPanel.Models.SuccessfulLoanApplications
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>SuccessfulLoanApplications</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.DeviceIMEI)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DeviceIMEI)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Amount)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Amount)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Interest)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Interest)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Disbursed)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Disbursed)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DateOfLoanApplication)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DateOfLoanApplication)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PeriodOfDays)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PeriodOfDays)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

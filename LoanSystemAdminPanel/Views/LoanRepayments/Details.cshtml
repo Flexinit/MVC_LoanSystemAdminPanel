@@ -1,0 +1,58 @@
+﻿@model LoanSystemAdminPanel.Models.LoanRepayment
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>LoanRepayment</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.IMEI)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IMEI)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AmountRepaid)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AmountRepaid)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AmountRemaining)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AmountRemaining)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DateOfRepayment)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DateOfRepayment)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TransactnID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TransactnID)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

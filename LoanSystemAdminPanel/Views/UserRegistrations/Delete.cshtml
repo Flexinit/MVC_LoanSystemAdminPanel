@@ -1,0 +1,184 @@
+﻿@model LoanSystemAdminPanel.Models.UserRegistrations
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>UserRegistrations</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.firstName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.firstName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.lastName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.lastName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.deviceIMEI)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.deviceIMEI)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.phoneN)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.phoneN)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IDnumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IDnumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.dateOfBirth)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.dateOfBirth)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.emailAddress)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.emailAddress)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.gender)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.gender)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.phoneIsMine)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.phoneIsMine)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.phoneIsNew)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.phoneIsNew)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.howLongHaveUsedPhone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.howLongHaveUsedPhone)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.averageIncome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.averageIncome)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.haveAjob)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.haveAjob)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.selfEmployed)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.selfEmployed)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.student)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.student)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.haveNoIncome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.haveNoIncome)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.purposeOfLoan)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.purposeOfLoan)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.kindOfExpenseForLoan)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.kindOfExpenseForLoan)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.descriptionForPurposeOfLoan)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.descriptionForPurposeOfLoan)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.anyOutstandingLoan)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.anyOutstandingLoan)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>
